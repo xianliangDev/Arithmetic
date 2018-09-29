@@ -41,7 +41,7 @@
 - (void)charReverse{
     NSString *origin = self.originStrlb.text;
     char chars[100];
-    memcpy(chars, [origin cStringUsingEncoding:NSASCIIStringEncoding], origin.length);
+    memcpy(chars, [origin cStringUsingEncoding:NSASCIIStringEncoding], origin.length*2);
     char_reverse(chars);
     self.resultStrlb.text = [NSString stringWithCString:chars encoding:CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000)];
     

@@ -16,9 +16,9 @@ void char_reverse(char *chars){
     char* end = chars + strlen(chars) - 1;
     while (begin<end) {
         //进行字符间的的交换
-        char* temp = begin;
+        char temp = *begin;
         *(begin++) = *end;
-        *(end--) = *temp;
+        *(end--) = temp;
     }
 }
 @end
