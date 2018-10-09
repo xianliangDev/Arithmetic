@@ -12,6 +12,7 @@
 void char_reverse(char *chars){
     //指向第一个字符
     char* begin = chars;
+    
     //指向最后一个字符
     char* end = chars + strlen(chars) - 1;
     while (begin<end) {

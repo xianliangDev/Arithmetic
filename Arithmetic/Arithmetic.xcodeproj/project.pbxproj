@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		054C96062160D42600FFC99D /* BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 054C96052160D42600FFC99D /* BubbleSort.m */; };
 		05B41F73215F601400E1A4C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B41F72215F601400E1A4C7 /* AppDelegate.m */; };
 		05B41F76215F601400E1A4C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B41F75215F601400E1A4C7 /* ViewController.m */; };
 		05B41F79215F601400E1A4C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B41F77215F601400E1A4C7 /* Main.storyboard */; };
@@ -14,9 +15,12 @@
 		05B41F7E215F601600E1A4C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B41F7C215F601600E1A4C7 /* LaunchScreen.storyboard */; };
 		05B41F81215F601600E1A4C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B41F80215F601600E1A4C7 /* main.m */; };
 		05B41F8F215F61D200E1A4C7 /* CharReverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B41F8E215F61D200E1A4C7 /* CharReverse.m */; };
+		05F11A31216CDD78003F7FD3 /* SelectionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F11A30216CDD77003F7FD3 /* SelectionSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		054C96042160D42600FFC99D /* BubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
+		054C96052160D42600FFC99D /* BubbleSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubbleSort.m; sourceTree = "<group>"; };
 		05B41F6E215F601400E1A4C7 /* Arithmetic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arithmetic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B41F71215F601400E1A4C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05B41F72215F601400E1A4C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +33,8 @@
 		05B41F80215F601600E1A4C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		05B41F8D215F61D200E1A4C7 /* CharReverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharReverse.h; sourceTree = "<group>"; };
 		05B41F8E215F61D200E1A4C7 /* CharReverse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharReverse.m; sourceTree = "<group>"; };
+		05F11A2F216CDD77003F7FD3 /* SelectionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionSort.h; sourceTree = "<group>"; };
+		05F11A30216CDD77003F7FD3 /* SelectionSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectionSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		054C96032160D3F400FFC99D /*  BubbleSort */ = {
+			isa = PBXGroup;
+			children = (
+				054C96042160D42600FFC99D /* BubbleSort.h */,
+				054C96052160D42600FFC99D /* BubbleSort.m */,
+			);
+			path = " BubbleSort";
+			sourceTree = "<group>";
+		};
 		05B41F65215F601400E1A4C7 = {
 			isa = PBXGroup;
 			children = (
@@ -61,10 +76,12 @@
 		05B41F70215F601400E1A4C7 /* Arithmetic */ = {
 			isa = PBXGroup;
 			children = (
+				05F11A2E216CDD5B003F7FD3 /* SelectionSort */,
 				05B41F71215F601400E1A4C7 /* AppDelegate.h */,
 				05B41F72215F601400E1A4C7 /* AppDelegate.m */,
 				05B41F74215F601400E1A4C7 /* ViewController.h */,
 				05B41F75215F601400E1A4C7 /* ViewController.m */,
+				054C96032160D3F400FFC99D /*  BubbleSort */,
 				05B41F8C215F619700E1A4C7 /* MergeSortedList */,
 				05B41F8B215F616600E1A4C7 /* CommonSuperFind */,
 				05B41F8A215F615700E1A4C7 /* ReverseList */,
@@ -122,6 +139,15 @@
 			children = (
 			);
 			path = MergeSortedList;
+			sourceTree = "<group>";
+		};
+		05F11A2E216CDD5B003F7FD3 /* SelectionSort */ = {
+			isa = PBXGroup;
+			children = (
+				05F11A2F216CDD77003F7FD3 /* SelectionSort.h */,
+				05F11A30216CDD77003F7FD3 /* SelectionSort.m */,
+			);
+			path = SelectionSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F11A31216CDD78003F7FD3 /* SelectionSort.m in Sources */,
 				05B41F76215F601400E1A4C7 /* ViewController.m in Sources */,
+				054C96062160D42600FFC99D /* BubbleSort.m in Sources */,
 				05B41F81215F601600E1A4C7 /* main.m in Sources */,
 				05B41F8F215F61D200E1A4C7 /* CharReverse.m in Sources */,
 				05B41F73215F601400E1A4C7 /* AppDelegate.m in Sources */,
